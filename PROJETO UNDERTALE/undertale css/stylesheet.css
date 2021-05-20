@@ -1,0 +1,39 @@
+@font-face {
+    font-family: 'Determination Mono';
+    src: url('DeterminationMono.eot');
+    src: url('DeterminationMono.eot?#iefix') format('embedded-opentype'),
+        url('DeterminationMono.woff2') format('woff2'),
+        url('DeterminationMono.woff') format('woff'),
+        url('DeterminationMono.ttf') format('truetype'),
+        url('DeterminationMono.svg#DeterminationMono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Determination Sans';
+    src: url('DeterminationSans.eot');
+    src: url('DeterminationSans.eot?#iefix') format('embedded-opentype'),
+        url('DeterminationSans.woff2') format('woff2'),
+        url('DeterminationSans.woff') format('woff'),
+        url('DeterminationSans.ttf') format('truetype'),
+        url('DeterminationSans.svg#DeterminationSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monster Friend Fore';
+    src: url('MonsterFriendFore.eot');
+    src: url('MonsterFriendFore.eot?#iefix') format('embedded-opentype'),
+        url('MonsterFriendFore.woff2') format('woff2'),
+        url('MonsterFriendFore.woff') format('woff'),
+        url('MonsterFriendFore.ttf') format('truetype'),
+        url('MonsterFriendFore.svg#MonsterFriendFore') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
