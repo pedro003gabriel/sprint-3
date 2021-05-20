@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    
+
+
+    <div style="background-color: rgb(46, 41, 41); width: 250px; height: 320px;" class="DIV_SEMAFORO">
+
+
+        <div " id="DIV_VERMELHO">
+
+            <img id="img_red" style="width: 30px;border-radius: 55px;"  src="Sem título(escuro vermelho).png" alt="">
+            <button  onclick="vermelho()" id="botao_vermelho">vermelho</button>
+
+        
+<br><br><br><br><br><br>
+
+        <div " id="DIV_AMARELO">
+
+            <img id="img_amarilo" style="border-radius: 45px;"   src="Sem título(escuro amarelo).png" alt="">
+            <button onclick="amarelo()" id="botao_amarelo">amarelo</button>
+
+        
+
+<br><br><br><br><br>
+
+        <div " id="DIV_VERDE">
+
+            <img id="img_green" style="border-radius: 45px;"  src="Sem título(escuro verde).png" alt="">
+            <button onclick="verde()" id="botao_verde">verde</button>
+
+        
+            <h1 style="color:red ; background-color: ;"></h1>
+    </div></div></div>
+
+</div>
+<!-- <h1 style="color:white ; background-color:green ;"> Pare! Aguarde o verde!</h1> -->
+<div id="div_txt">
+
+</div>
+
+</body>
+
+</html>
+<script>
+function vermelho(){
+    img_red.src="Sem título.png"
+
+    div_txt.innerHTML=`<h1 style="color:white ; background-color:red ;"> Pare! Aguarde o verde!</h1>`
+    
+}
+
+
+function amarelo(){
+    img_amarilo.src="Sem título2.png"
+    div_txt.innerHTML=` <h1 style="color:black; background-color:orange ;"> Só siga se estiver perto e rápido.</h1>`
+}
+
+
+function verde(){
+    img_green.src="semtitulo3.png"
+    div_txt.innerHTML=`<h1 style="color: white; background-color: green;">Siga :)</h1>`
+}
+
+
+
+</script>

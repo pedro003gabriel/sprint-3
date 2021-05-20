@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- alt+z quebra linha 
+ shift + alt + r-->
+<body>
+    <h1>CLUBES E SUAS CONQUISTAS</h1> 
+
+    <button onclick="resetar()" style="color: blue; width: 100px;" >resetar</button><br>
+
+    <button onclick="aparecer()" style="color: brown; width: 100px;" >aparecer</button> <br>
+    <button onclick="esconder()" style="color: red; width: 100px;" >esconder</button>
+    <div id="div_aparecer">
+    
+    <div id="div_esconder">
+    
+        <br>
+  
+
+    <img onclick="sp()" style="height: 220px; width: 220px;" src="data:image/png;base64,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"
+        alt="emblema do spfc"> <br> <br>  <div id="div_resetar"> <div id="div_sp"></div> </div>
+
+
+    <img onclick="mondial()" style="height: 200px; width: 200px;" style="height: 200px; width: 200px;" src="https://i.pinimg.com/originals/1a/f9/cf/1af9cf8c5ec1a7ba646341db048b5695.png"
+        alt="escudo do sem mundial"><br> <br> <div id="div_resetar1"> <div id="div_mondial"></div></div>
+
+
+    <img onclick="santos()" style="height: 200px; width: 200px;" src="https://upload.wikimedia.org/wikipedia/commons/3/35/Santos_logo.svg"
+        alt="Santos_logo"><br> <br>           <div id="div_resetar2">       <div id="div_santos"></div></div>  
+
+
+    <img onclick="ladrao()" style="height: 200px; width: 200px;" src="https://i.pinimg.com/originals/a3/57/d4/a357d450b28012a103332f9d469e4f66.jpg"
+        alt="Corintias_logo"><br> <br>     <div id="div_resetar3">      <div id="div_ladrao"></div> </div>  
+     
+    </div>
+    <div style="display: none;" id="taca_sp">
+        <img  style="width: 100px;height: 100px" src="https://i.pinimg.com/originals/1a/d6/5b/1ad65b315e150c4907b7bd6ffa247196.jpg"  alt=""> <img style="width: 100px;height: 100px" src="https://i.pinimg.com/originals/1a/d6/5b/1ad65b315e150c4907b7bd6ffa247196.jpg" alt=""> <img style="width: 100px;height: 100px" src="https://i.pinimg.com/originals/1a/d6/5b/1ad65b315e150c4907b7bd6ffa247196.jpg" alt="">`
+
+    </div>
+</div>
+</body>
+
+</html>
+<script>
+
+
+function sp() {
+    taca_sp.style.display="block"
+}
+
+function mondial(){
+    div_mondial.innerHTML = ` <img style="height: 100px; width: 100px;" src="https://www.otempo.com.br/image/contentid/policy:1.2444563:1612733404/Mondial.JPG?f=new-layout-article-photo-gallery-fit_930&w=1200&$p$f$w=73f0c02" alt="">  `
+}
+
+function santos(){
+    div_santos.innerHTML = ` <img style="width: 100px;height: 100px" src="https://i.pinimg.com/originals/1a/d6/5b/1ad65b315e150c4907b7bd6ffa247196.jpg" alt=""> <img style="width: 100px;height: 100px" src="https://i.pinimg.com/originals/1a/d6/5b/1ad65b315e150c4907b7bd6ffa247196.jpg" alt="">`
+}
+
+function ladrao(){
+    div_ladrao.innerHTML = ` <img style="width: 100px;height: 100px" src="https://i.pinimg.com/originals/1a/d6/5b/1ad65b315e150c4907b7bd6ffa247196.jpg" alt=""> <img style="width: 100px;height: 100px" src="https://i.pinimg.com/originals/1a/d6/5b/1ad65b315e150c4907b7bd6ffa247196.jpg" alt="">`
+}
+
+
+
+function resetar(){
+    div_resetar.style.display="none"
+    div_resetar1.style.display="none"
+    div_resetar2.style.display="none"
+    div_resetar3.style.display="none"
+}
+
+
+function esconder(){
+    // div_esconder.style.display="none"
+    if (div_esconder.style.display == "none") {
+        div_esconder.style.display = "block"
+    } else {
+        div_esconder.style.display = "none"
+    }
+}
+
+function aparecer(){
+    
+    div_esconder.style.display="block"
+}
+</script>

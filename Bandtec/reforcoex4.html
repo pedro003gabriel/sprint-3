@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Calcular</h1>
+
+    digite o valor do carro avista <br>
+    <input id="AVISTA" type="number" >
+<br> <br>
+    taxa de juros ao mes <br>
+    <input id="JUROS" type="number" >
+<br> <br>
+    Solicite a quantidade de parcelas <br>
+    <input id="QTD_PARC" type="number" > <br>
+<br>
+<button onclick="calculos()">Calcular preju</button>
+
+<div id="div_txt"></div>
+</body>
+</html>
+<script>
+function calculos(){
+var avista = AVISTA.value;  
+
+var juros = JUROS.value;  
+ 
+var parcela = QTD_PARC.value; 
+
+var term1 = avista/parcela;
+
+var razao = (juros/100) + 1;
+
+var total = (term1*(razao**parcela-1)) /(razao - 1)    
+
+var p80   = (avista * 0.8)
+
+// var C     = ()
+
+div_txt.innerHTML= `
+    Seu carro vai sair por um total de ${total}. Após 1 mês, ele já vai valer só ${p80} . Porque
+comprou financiado, vai pagar o correspondente a ${total/avista} carros.`
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+
+
+
+</script>
