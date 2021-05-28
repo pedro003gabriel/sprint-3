@@ -1,0 +1,639 @@
+
+@font-face {
+    font-family: 'Determination Mono';
+    src: url('DeterminationMono.eot');
+    src: url('DeterminationMono.eot?#iefix') format('embedded-opentype'),
+        url('DeterminationMono.woff2') format('woff2'),
+        url('DeterminationMono.woff') format('woff'),
+        url('DeterminationMono.ttf') format('truetype'),
+        url('DeterminationMono.svg#DeterminationMono') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Determination Sans';
+    src: url('DeterminationSans.eot');
+    src: url('DeterminationSans.eot?#iefix') format('embedded-opentype'),
+        url('DeterminationSans.woff2') format('woff2'),
+        url('DeterminationSans.woff') format('woff'),
+        url('DeterminationSans.ttf') format('truetype'),
+        url('DeterminationSans.svg#DeterminationSans') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Monster Friend Fore';
+    src: url('MonsterFriendFore.eot');
+    src: url('MonsterFriendFore.eot?#iefix') format('embedded-opentype'),
+        url('MonsterFriendFore.woff2') format('woff2'),
+        url('MonsterFriendFore.woff') format('woff'),
+        url('MonsterFriendFore.ttf') format('truetype'),
+        url('MonsterFriendFore.svg#MonsterFriendFore') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+#div_fundo{
+    background-image: url();
+}
+
+body {
+    font-family:'DeterminationSans';
+  
+
+   
+    /* margin: 0 20px ; */
+}
+
+#div_body02{
+    margin: 0 20px;
+}
+
+.destaque_determinacao{
+    color: #080202;
+    margin-bottom: 100px;
+}
+
+.header {
+/* border-top: 25px solid black ; */
+/* background-color: #0800ec; */
+border-color: rgb(255, 137, 3) ;
+box-shadow: rgb(255, 137, 3);
+color: white;
+overflow: auto;
+border-right: 3px solid orange;
+border-left: 3px solid orange;
+border-top: 3px solid orange;
+border-bottom: 3px solid orange;
+/* padding:30px 0 30px 10px; */
+}
+
+.conteiner1{
+    text-align: center;
+    width: 80%;
+    margin: auto;
+
+
+}
+
+
+.navbar {
+    list-style: none;
+    /* float: right; */
+    color: rgb(255, 214, 110);
+    max-width: 900px;
+}
+
+
+
+.titulo {
+    margin: 0;
+    float: left;
+    color: rgb(255, 137, 3);
+}
+
+.navbar li {
+    float: left;
+    margin-left: 50px;
+    margin-right: 20px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    max-width: 180px;
+    font-family: Determination Sans ;
+    color: rgb(255, 137, 3);
+    
+}
+
+.navbar li a:hover{
+    color: #ff0;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+
+#l13{
+ max-width: 0px;
+
+
+}
+
+#l14{
+    max-width: 97px;
+
+}
+
+#l12{
+    max-width: 40px;
+    margin-left: -5px;
+}
+
+#l15{
+    max-width: 80px;
+    margin-left: -5px;
+   
+}
+
+
+
+
+.destaque{
+    color: rgba(255, 89, 0, 0.913);
+
+}
+a{
+    text-decoration: none;
+    color:orangered;
+}
+
+a:hover{
+    color: rgb(255, 0, 0);
+}
+
+.conteinergeral1{
+    max-width: 20px;
+    max-height: 50px;
+}
+
+
+
+
+.button_idex:hover{
+background-color: rgb(255, 0, 0);
+
+}
+
+
+
+
+/* banner */
+
+.banner{
+    text-align: center;
+   
+    background-image: url(image/undertale-thumb.png);
+    background-repeat: no-repeat ;
+    background-size: 100% ;
+    margin-bottom: auto;
+}
+
+.banner .conteiner1{
+    margin: 0;
+    font-size: 50px;
+    padding-top: 50px;
+
+}
+
+.banner h3{
+    color: #555555;
+
+
+}
+
+
+/* botoes */
+
+
+
+
+
+
+
+
+.div_gif{
+    width: 200px;
+}
+
+/* .saiba-mais button{
+    border: 0;
+    background-color: orangered;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    margin-top: 30px;
+    
+    
+} */
+
+/* .saiba-mais{
+    text-align: center;
+    background-color:#232323 ;
+    height: 90px;
+} */
+/* missao viao valores */
+
+.box img{
+    height: 100px;
+}
+
+.box{
+    border: 3px solid orange;
+    overflow: auto;
+ }
+
+.box-item{
+    /* border: 3px solid orangered; */
+    float: left;
+    text-align: center;
+    width: 27%;
+    padding: 3%;
+    align-items: center;
+ }
+
+/* footer */
+
+.footer{
+    text-align: center;
+    background-color: orangered;
+    height: 80px;
+}
+
+.footer h3{
+    margin: 0;
+    padding-top: 40px;
+    font-weight: 100;
+    color: white;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(255, 179, 37);
+}
+
+a:hover{
+    font-weight: 700;
+}
+
+/* login */
+
+
+.pag-login {
+    background-color: #232323;
+}
+
+.pag-login h1 {
+    margin: 0;
+}
+
+.box-login {
+    background-color: #fff;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    box-shadow: 5px 7px 13px  1px gray;
+}
+
+
+
+/* BODY PAGINA DE INICIO  */
+
+.body_inicio{
+    background-color: black;
+
+}
+
+/* BOTAO */
+html, body {
+	height: 100%;
+   
+}
+#body_pag_inicio {
+	margin: 100;
+	background: linear-gradient(rgb(6, 6, 14), rgb(6, 2, 22));
+    
+    background-repeat: no-repeat;
+}
+
+.BOTAO_INICIO {
+    margin-top: -160px;
+    margin-right: 350px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+.animated-word {
+	font-family: deter;
+
+	letter-spacing: 0.2em;
+	font-weight: 600;
+	font-size: 15px;
+	text-align: center;
+    color: rgb(255, 179, 37);
+    cursor: pointer;
+    max-width: 100px; 
+    width: 100%; 
+    outline: 4px solid;
+    outline-color: rgb(255, 179, 37);
+    outline-offset: 5px;
+    transition: all 500ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+	color: #ff0;
+  outline-color: #ff0;
+  outline-offset: 50px;
+}
+
+#div_flowey{
+    background-image: url(Flowey\ Bem\ vindo.png);
+}
+
+.pagina_inicio{
+    font-family: 'Determination Sans' ;
+}
+
+
+
+
+/* 👎⚐☠🕯❄**************** */
+
+#body_👎⚐☠🕯❄{
+    background-image: url(https://i.pinimg.com/originals/15/c7/a8/15c7a8873f52ca99a4fa883df2a0d73e.gif);
+}
+
+html, body {
+	height: 100%;
+   
+}
+#body_pag_inicio {
+	margin: 100;
+	background: linear-gradient(rgb(6, 6, 14), rgb(6, 2, 22));
+    
+    background-repeat: no-repeat;
+}
+
+.BOTAO_INICIO {
+    margin-top: -160px;
+    margin-right: 350px;
+	height: 100%;
+	display: flex;
+	align-items: center;
+  justify-content: center;
+}
+.animated-word {
+	font-family: Determination Sans ;
+    /* font: upp; */
+    margin-left: 50px;
+	letter-spacing: 0.5em;
+	font-weight: 600;
+	font-size: 30px;
+	text-align: center;
+    color: rgb(255, 179, 37);
+    cursor: pointer;
+    max-width: 500px;
+    max-height: 500px;
+    width: 300px; 
+    outline: 4px solid;
+    outline-color: rgb(255, 179, 37);
+    outline-offset: 100%;
+    transition: all 400ms cubic-bezier(0.2, 0, 0, 0.8);
+}
+
+.animated-word:hover {
+	color: rgb(162, 105, 229);
+  outline-color: rgb(162, 105, 229);
+  outline-offset: 50px;
+}
+
+
+
+
+
+/* PAGINA PERSONAGENS***************** */
+#div_banner_Personagens{
+    text-align: center;
+   
+    background-image: url(image/PAG_PESONAGENS_BANNER.png);
+    background-repeat: no-repeat ;
+    margin-left: 150px;
+   width: 100%;
+    height: 500px;
+    margin: bottom -10px;
+}
+
+
+
+.banner h3{
+    color: #555555;
+
+
+}
+
+
+
+.img_persona{
+    width: 100px;
+    color: rgb(255, 179, 37);
+}
+
+.divTeste {
+    display: flex;
+    width: 100px;
+    background-color: rgb(255, 179, 37);
+}
+.divTeste:hover {
+    width: 800px;
+    height: 200px;
+    background-color: rgb(255, 179, 37);
+    color: black;
+}
+.img_persona:hover{
+    width: 200px;
+    height: 200px;
+    color: rgb(255, 179, 37);
+}
+
+.divimg_personagens1 {
+    margin-bottom: 250px;
+    margin-top: 150px;
+    color: rgb(255, 179, 37);
+}
+.divTeste ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    width: 300px;
+}
+.divTeste ul li {
+    position: absolute;
+    left: 149px;
+    top: 0;
+    display: none;
+}
+li:hover ul {
+    display: block;
+}
+
+
+/* imagens personagens  */
+
+.persona_pag{
+    border-right:   3px solid rgb(255, 179, 37);
+    border-left:    3px solid rgb(255, 179, 37);
+    border-top:     3px solid rgb(255, 179, 37);
+    border-bottom:  3px solid rgb(255, 179, 37);
+
+}
+
+
+
+/* DETERMINAÇAO PAGINA************ */
+
+.texto_dertermina{
+    border-right:   3px solid rgb(255, 179, 37);
+    border-left:    3px solid rgb(255, 179, 37);
+    border-top:     3px solid rgb(255, 179, 37);
+    border-bottom:  3px solid rgb(255, 179, 37);
+    color: whitesmoke   ;
+    font-family: Determination Mono ;
+
+}
+
+
+
+
+/* .texto_dertermina; */
+.txt_determinacao{
+    color: rgb(255, 137, 3) ;
+    border-right:   1px solid rgb(255, 179, 37);
+    border-left:    1px solid rgb(255, 179, 37);
+    border-top:     1px solid rgb(255, 179, 37);
+    border-bottom:  1px solid rgb(255, 179, 37);
+}
+
+/* regioes*************  */
+.img_regioes{
+    border-right:   2px solid rgb(255, 255, 254);
+    border-left:    2px solid rgb(255, 255, 254);
+    border-top:     2px solid rgb(255, 255, 254);
+    border-bottom:  2px solid rgb(255, 255, 254);
+}
+
+.txt_regioes{
+    margin: 0 100px  0;
+}
+
+.div_img_tx{
+border-right:   3px solid rgb(255, 255, 254);
+border-left:    3px solid rgb(255, 255, 254);
+border-top:     3px solid rgb(255, 255, 254);
+border-bottom:  3px solid rgb(255, 255, 254);
+margin-bottom: 100px    
+}
+
+
+
+
+/* login **************** */
+#div_banner_lOGIN{
+    
+    text-align: center;
+    background-image: url(image/login_banner.jpg);
+    background-repeat: no-repeat;
+    margin-left: 211px;
+    width: 88%;
+    height: 496px;
+    margin: bottom -10px;
+}
+
+.box{
+    margin-top: -150px;
+}
+
+.login_input{
+    margin-left: 7px;
+    font-family:Determination Mono ;
+
+    border-right:   2px solid rgb(255, 255, 254);
+    border-left:    2px solid rgb(255, 255, 254);
+    border-top:     2px solid rgb(255, 255, 254);
+    border-bottom:  2px solid rgb(255, 255, 254);
+    background-color: #080202;
+    color: #ff0;
+}
+
+
+.span_login{
+    margin-left: 7px;
+    font-family:Determination Mono ;
+    color: #ff0;
+}
+
+.button_login{
+    margin-left: 7px;
+    font-family:Determination Mono ;
+    border-right:   2px solid rgb(255, 179, 37);
+    border-left:    2px solid rgb(255, 179, 37);
+    border-top:     2px solid rgb(255, 179, 37);
+    border-bottom:  2px solid rgb(255, 179, 37);
+    background-color: #080202;
+    color: rgb(255, 179, 37);
+}
+
+.button_login:hover{
+    color:  #ff0;
+    border-color:  #ff0;
+    outline-offset: 50px; 
+
+
+}
+
+/* sobre o jogo *********** */
+#div_banner_sobre_jogo {
+    text-align: center;
+    background-image: url(image/737405.jpg);
+    background-repeat: no-repeat;
+    margin-left: 164px;
+    width: 666px;
+    height: 392px;
+    border-right: 4px solid rgb(255, 179, 37);
+    border-left: 4px solid rgb(255, 179, 37);
+    border-top: 4px solid rgb(255, 179, 37);
+    border-bottom: 4px solid rgb(255, 179, 37);
+}
+
+
+/* cadastro************** */
+
+#div_banner_cadastro{
+   
+        background-image: url(image/banner_cadastro.png);
+        background-repeat: no-repeat;
+        width: 297px;
+        height: 148px;
+        margin-left: 171;
+        border-right: 3px solid rgb(255, 179, 37);
+        border-left: 4px solid rgb(255, 179, 37);
+        border-top: 2px solid rgb(255, 179, 37);
+        border-bottom: 2px solid rgb(255, 179, 37);
+    }
+.txt_cadastro{
+    margin: 0;
+    color: whitesmoke;
+    font-family:Determination Mono  ;
+    margin-left: 300px;
+    
+}
+
+
+
+
+
+ /* ******************************TEXTO FORA DO LARANJA******************* */
+ .texto_fora_laranja {
+    Margin-left: 413px;
+    color: white;
+    font-size: 50px;
+    font-family: Determination Sans;
+    width: 131px;
+    border-right: 2PX solid rgb(255, 179, 37);
+    border-left: 2PX solid rgb(255, 179, 37);
+    border-top: 2PX solid rgb(255, 179, 37);
+    border-bottom: 2PX solid rgb(255, 179, 37);
+ }
+ /* ******************************TEXTO FORA DO LARANJA******************* */
