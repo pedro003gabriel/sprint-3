@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undertale Fb</title>
+
+    <link rel="stylesheet" href="css/undertale.css  ">
+    <link rel="icon" href="css/image/icone.png" style="width: 50px" type="image/x-icon">    
+
+
+</head>
+
+
+
+
+
+
+
+
+<body style="background-color: black; background-image: url(background\ undertale.jpg) image-set(max-width 30PX)">
+    <div id="TUDO" style=" display: block; max-width: 1000px; max-height: 4000px; margin-left: auto; margin-right: auto;"
+        class="containergeral1">
+    
+        <div id="div_body02">
+            <div class="header">
+
+                <div class="conteiner">
+
+                    <div class="wds-community-header__wordmark" data-tracking="wordmark-image">
+                        <a accesskey="z" >
+                            <img src="css/image/undertale_logo.png" width="250" height="74" alt="">
+                        </a>
+                    </div>
+                    <ul class="navbar">
+                        <div class="item_header" style="margin-left: 90px;">
+
+                            <li id="l11"><a href="pre-login-pag.html" style="text-decoration: none; "> Home </a></li>
+                            <li id="l12"><a  style="text-decoration: none;">????</a></li>
+                            <li id="l13"><a  style="text-decoration: none;">????</a></li>
+                            <li id="l14"><a  style="text-decoration: none;">????</a></li>
+                            <li id="l1"><a  style="text-decoration: none;">????</a></li>
+                           
+
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+                <div id="div_banner_lOGIN" >
+
+                    <h1 class="txt_login"> It's
+                        your choice</h1>
+                        <img src="" alt="">
+                </div>
+
+      
+                    <div class="box">
+                        <div class="container">
+                            <div class="logo">
+    
+    
+    
+    
+    
+                                <form id="form_login" method="post" onsubmit="return entrar()">
+                                    <span class="span_login">Login</span><br>
+                                    <input name="login" class="login_input" type="text" placeholder="Nome de Usuário"><br><br>
+                                    <span class="span_login">Senha</span><br>
+                                    <input name="senha" class="login_input" type="password" placeholder="Insira sua Senha"><br><br>
+                                    <button id="btn_entrar" onclick="entrar()"  class="button_login">
+                                        <ahref="Site Undertale.html">LOGIN</a>
+                                    </button><br>
+                                    <h6>Não tem conta? <a href="cadastro.html">Cadastre-se já</a></h6>
+                                </form>
+                                <div class="extra">
+                                    <div id="div_erro" class="msg_erro">
+                                    </div>
+    
+                                 
+                                    <!--style="display: none;"-->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </body>
+    
+    </div>
+    </body>
+    </div>
+    
+    </html>
+    <script>
+    
+        function entrar() {
+            aguardar();
+            var formulario = new URLSearchParams(new FormData(form_login));
+            fetch("/usuarios/autenticar", {
+                method: "POST",
+                body: formulario
+            }).then(resposta => {
+    
+                if (resposta.ok) {
+    
+                    resposta.json().then(json => {
+    
+                        sessionStorage.login_usuario_meuapp = json.login;
+                        sessionStorage.nome_usuario_meuapp = json.nome;
+    
+                        window.location.href = 'pagina_inicial.html';
+                    });
+    
+                } else {
+    
+                    console.log('Erro de login!');
+    
+                    resposta.text().then(texto => {
+                        console.error(texto);
+                        finalizar_aguardar(texto);
+                    });
+                }
+            });
+    
+            return false;
+        }
+    
+        function aguardar() {
+            btn_entrar.disabled = true;
+            img_aguarde.style.visibility = 'visible';
+            div_erro.style.visibility = 'hidden';
+        }
+    
+        function finalizar_aguardar(resposta) {
+            btn_entrar.disabled = false;
+            img_aguarde.style.visibility = 'hidden';
+            div_erro.style.visibility = 'visible';
+            div_erro.innerHTML = resposta;
+        }
+    
+    </script>
