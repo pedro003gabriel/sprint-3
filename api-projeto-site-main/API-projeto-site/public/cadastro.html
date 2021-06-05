@@ -10,7 +10,7 @@
     <title>Undertale Fb</title>
 
     <link rel="stylesheet" href="css/undertale.css  ">
-    <link rel="icon" href="css/image/icone.png" style="width: 50px" type="image/x-icon">    
+    <link rel="icon" href="css/image/icone.png" style="width: 50px" type="image/x-icon">
 
 
 </head>
@@ -39,7 +39,14 @@
                     <ul class="navbar">
                         <div class="item_header" style="margin-left: 50px;">
 
-                           
+                            <li id="l11"><a href="" style="text-decoration: none;"><span
+                                        class="destaque"></span>HOME</a></span></a> </li>
+                            <li id="l12"><a href="Personagens.html" style="text-decoration: none;">Personagens</a></li>
+                            <li id="l13"><a href="Regioes.html" style="text-decoration: none;"> Regiões </a> </li>
+                            <li id="l14"><a href="sobre_ojogo.html" style="text-decoration: none; "> sobre o jogo </a>
+                            </li>
+                            <li id="l15"><a href="login.html" style="text-decoration: none; "> login </a></li>
+                            <li id="l15"><a href="👎⚐☠🕯❄_1.html" style="text-decoration: none; "> 👎⚐☠🕯❄ </a></li>
 
                         </div>
 
@@ -49,11 +56,11 @@
 
 
 
-            <div id="div_banner_cadastro" >
-            
+            <div id="div_banner_cadastro">
+
                 <img src="" alt="">
             </div>
-            <h4 class="txt_cadastro" >Cadastre-se para ter mais conteudo</h4>
+            <h4 class="txt_cadastro">Cadastre-se para ter mais conteudo</h4>
 
 
 
@@ -61,64 +68,58 @@
 
 
 
-    <div class="box" style="margin-top: 1px;">
-        <div class="container">
-            <div class="logo">
-               
-                <div class="acesso">
+            <div class="box" style="margin-top: 1px;">
+                <div class="container">
+                    <div class="logo">
+
+                        <div class="acesso">
 
 
-                    <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
-
-              
-                        
-                        
-                        
-                        
-                            <input type="text" name="nome" class="login_input" autofocus="autofocus" placeholder="Nome" required minlength="4">
-                            <input type="text" name="sobrenome" class="login_input" autofocus="autofocus" placeholder="sobrenome" required minlength="4">
-
-               
+                            <form id="form_cadastro" method="post" onsubmit="return cadastrar()">
+                                <span class="span_login"><br>
+                                    <input type="text" name="nome" class="login_input" placeholder="Nome" required
+                                        minlength="4"></span>
 
 
-            
-                        <input type="text" name="email" class="login_input" placeholder="seu nome de usuário" required minlength="4">
-                        <input type="password" name="senha" class="login_input" placeholder="Sua senha" required minlength="4">
-                  
-                    <br><br>
-                    
-                    <input type="submit" id="btn_entrar" value="Cadastrar" class="btn-green">
-                    <!-- <button class="button_login" onclick="cadastrar()">CADASTRE-SE</button><br> -->
-                    <h6>Já tem conta? <a href="index.html">Entre já</a></h6>
 
-                    </form>
-                    
-                    <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
-                        Erro no cadastro
+                                <span class="span_login">
+                                    <input type="text" name="sobrenome" class="login_input" placeholder="Sobrenome"
+                                        required minlength="4"></span>
+
+
+
+                                <span class="span_login">
+                                    <input type="text" name="login" class="login_input" placeholder="Email" required
+                                        minlength="10"></span>
+
+                                <span class="span_login">
+                                    <input type="password" name="senha" class="login_input" placeholder="Nova Senha"
+                                        required minlength="4"></span>
+
+
+                                <input type="submit"  id="btn_entrar" value="Cadastrar" class="button_login">
+                                <h6>Já tem conta? <a href="Login.html">Entre já</a></h6>
+                                
+                            </form>
+                            <img src="aguarde-orange.gif" id="img_aguarde" style="display: none; width:100px">
+    
+                            <div id="div_erro" style="background-color: sandybrown; color: maroon; display: none;">
+                                Erro no cadastro
+                            </div>
+                      
+
+
+                            <!-- <button class="button_login" onclick="login()">CADASTRE-SE</button><br>
+                            <h6>Já tem conta? <a href="Login.html">Entre já</a></h6> -->
+                        </div>
                     </div>
                 </div>
-                <div class="imagem-lateral">
-                   
             </div>
-        </div>
-    
-    
-                </div>
-
-
-
-
-                </div>
-            </div>
-        </div>
-    </div>
-</body>
+    </body>
 
 </html>
-
 <script>
-
-    function cadastrar() {
+function cadastrar() {
         aguardar();
         var formulario = new URLSearchParams(new FormData(form_cadastro));
         fetch("/usuarios/cadastrar", {
@@ -128,7 +129,7 @@
             
             if (response.ok) {
 
-                window.location.href='login.html';
+                window.location.href='login_real.html';
 
             } else {
 
@@ -143,5 +144,15 @@
         return false;
     }
 
+    function aguardar() {
+        btn_entrar.disabled = true;
+        img_aguarde.style.display='block';
+        div_erro.style.display='none';
+    }
 
+    function finalizar_aguardar() {
+        btn_entrar.disabled = false;
+        img_aguarde.style.display='none';
+        div_erro.style.display='block';
+    }
 </script>
