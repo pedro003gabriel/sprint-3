@@ -32,8 +32,8 @@
                 <div class="conteiner">
 
                     <div class="wds-community-header__wordmark" data-tracking="wordmark-image">
-                        <a accesskey="z">
-                            <img src="css/image/undertale_logo.png" width="250" height="74" alt="">
+                        <a accesskey="z" href="site_Undertale.html">
+                            <img  src="css/image/undertale_logo.png" width="250" height="74" alt="">
                         </a>
                     </div>
                     <ul class="navbar">
@@ -44,7 +44,7 @@
                             <li id="l14"><a href="sobre_ojogo.html" style="text-decoration: none; "> sobre o jogo </a>
                             </li>
                             <li id="l15"><a href="login.html" style="text-decoration: none; "> comunidade</a></li>
-                            <li id="l15"><a href="gaster.html" style="text-decoration: none; "> 👎⚐☠🕯❄ </a></li>
+                            <!-- <li id="l15"><a href="gaster.html" style="text-decoration: none; "> 👎⚐☠🕯❄ </a></li> -->
 
                         </div>
 
@@ -210,6 +210,12 @@
         c31 = document.getElementById('cel31').innerHTML;
         c32 = document.getElementById('cel32').innerHTML;
         c33 = document.getElementById('cel33').innerHTML;
+        if ((c11 == 'X')) {
+            c31.innerHTML = 'O';
+        }
+
+
+
         if (((c11 != '') && (c12 != '') && (c13 != '') && (c11 == c12) && (c12 == c13)) || ((c11 != '') && (c22 != '') && (c33 != '') && (c11 == c22) && (c22 == c33)) || ((c11 != '') && (c21 != '') && (c31 != '') && (c11 == c21) && (c21 == c31)) || ((c21 != '') && (c22 != '') && (c23 != '') && (c21 == c22) && (c22 == c23)) || ((c31 != '') && (c32 != '') && (c33 != '') && (c31 == c32) && (c32 == c33)) || ((c12 != '') && (c22 != '') && (c32 != '') && (c12 == c22) && (c22 == c32)) || ((c13 != '') && (c23 != '') && (c33 != '') && (c13 == c23) && (c23 == c33)) || ((c31 != '') && (c22 != '') && (c13 != '') && (c31 == c22) && (c22 == c13))) {
             alert('Você ganhou! Parabéns campeão!');
             novo();
